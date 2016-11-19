@@ -20,7 +20,7 @@
 				<configuration>
 					<archive>
 						<manifest>
-							<mainClass>br.edu.fema.academicofx.Main</mainClass>
+							<mainClass>br.edu.utfpr.auditoria.cripto.View.Main</mainClass>
 						</manifest>
 					</archive>
 				</configuration>

@@ -6,36 +6,27 @@
 <?import javafx.scene.layout.*?>
 <?import javafx.scene.layout.AnchorPane?>
 
-
-<AnchorPane minHeight="200.0" minWidth="300.0" prefHeight="379.0"
-	prefWidth="300.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/8">
-	<children>
-		<ChoiceBox fx:id="cbTipo" layoutX="24.0" layoutY="92.0"
-			prefHeight="25.0" prefWidth="260.0" />
-		<Label layoutX="24.0" layoutY="70.0" text="Tipo de Criptografia: " />
-		<ChoiceBox fx:id="cbTamanhoMsg" layoutX="24.0" layoutY="150.0"
-			prefHeight="25.0" prefWidth="260.0" />
-		<Label layoutX="24.0" layoutY="127.0" text="Tamanho da mensagem: " />
-		<Label layoutX="24.0" layoutY="14.0" prefHeight="17.0"
-			prefWidth="260.0" text="Testes de criptografia">
-			<font>
-				<Font name="Segoe UI Semilight" size="16.0" />
-			</font>
-		</Label>
-		<Separator layoutX="26.0" layoutY="46.0" prefWidth="255.0" />
-		<Label layoutX="24.0" layoutY="186.0" text="Comprimento da chave" />
-		<ChoiceBox fx:id="cbComprimentoChave" layoutX="26.0"
-			layoutY="212.0" prefHeight="25.0" prefWidth="255.0" />
-
-		<Button layoutX="95.0" layoutY="268.0" mnemonicParsing="false"
-			prefHeight="25.0" prefWidth="112.0" text="Iniciar teste"
-			textAlignment="CENTER" />
-		<Separator layoutX="26.0" layoutY="257.0" prefWidth="255.0" />
-		<Pane layoutY="301.0" prefHeight="78.0" prefWidth="300.0">
-			<children>
-				<Label layoutX="122.0" layoutY="6.0" text="Tempo (ms):" />
-				<Label fx:id="lbTempo" layoutX="141.0" layoutY="31.0" text="Label" />
-			</children>
-		</Pane>
-	</children>
+<AnchorPane maxHeight="400.0" maxWidth="400.0" minHeight="400.0" minWidth="400.0" prefHeight="400.0" prefWidth="400.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="br.edu.utfpr.auditoria.cripto.View.MainController">
+   <children>
+      <Label layoutX="24.0" layoutY="70.0" maxWidth="350.0" minWidth="350.0" prefWidth="350.0" text="Tipo de Criptografia: " />
+      <ComboBox fx:id="cbTamanhoMsg" layoutX="24.0" layoutY="150.0" maxWidth="350.0" minWidth="350.0" prefHeight="25.0" prefWidth="350.0" />
+      <Label layoutX="24.0" layoutY="127.0" maxWidth="350.0" minWidth="350.0" prefWidth="350.0" text="Tamanho da mensagem: " />
+      <Label layoutX="24.0" layoutY="14.0" maxWidth="350.0" minWidth="350.0" prefHeight="17.0" prefWidth="350.0" text="Testes de criptografia">
+         <font>
+            <Font name="Segoe UI Semilight" size="16.0" />
+         </font>
+      </Label>
+      <Separator layoutX="26.0" layoutY="46.0" maxWidth="350.0" minWidth="350.0" prefWidth="350.0" />
+      <Label layoutX="24.0" layoutY="186.0" maxWidth="350.0" minWidth="350.0" prefWidth="350.0" text="Comprimento da chave" />
+      <ComboBox fx:id="cbComprimentoChave" layoutX="26.0" layoutY="212.0" maxWidth="350.0" minWidth="350.0" prefHeight="25.0" prefWidth="350.0" />
+      <Button fx:id="btStart" layoutX="26.0" layoutY="268.0" maxWidth="350.0" minWidth="350.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="350.0" text="Iniciar teste" textAlignment="CENTER" />
+      <Separator layoutX="26.0" layoutY="257.0" maxWidth="350.0" minWidth="350.0" prefWidth="350.0" />
+      <ComboBox fx:id="cbTipo" layoutX="26.0" layoutY="95.0" maxWidth="350.0" minWidth="350.0" prefHeight="25.0" prefWidth="350.0" />
+      <Label layoutX="26.0" layoutY="310.0" text="Tempo de Criptografia:" />
+      <Label layoutX="26.0" layoutY="334.0" text="Tempo de Decriptação:" />
+      <Label fx:id="tcripto" layoutX="158.0" layoutY="310.0" />
+      <Label fx:id="tdecripto" layoutX="158.0" layoutY="334.0" />
+      <Label layoutX="26.0" layoutY="358.0" text="Texto decriptografado:" />
+      <Label fx:id="lbUncript" layoutX="158.0" layoutY="358.0" />
+   </children>
 </AnchorPane>
